@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".ui.activity.UserActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_current_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0B76FF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户模式"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_title_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEDF5FF"
+        android:gravity="center"
+        app:tabIndicatorColor="#FF0B76FF"
+        app:tabMaxWidth="125dp"
+        app:tabMinWidth="125dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FF0B76FF"
+        app:tabTextAppearance="@style/TabLayoutTextSize"
+        app:tabTextColor="#FF333333" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tl_title_user"
+        android:layout_below="@+id/rl_current_title" />
+</RelativeLayout>

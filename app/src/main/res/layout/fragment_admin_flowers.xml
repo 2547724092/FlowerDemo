@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F8F8"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.fragment.AdminFlowersFragment">
+
+    <ImageView
+        android:id="@+id/iv_flowers"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/tv_select_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="打开相册"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲜花名称"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_ad_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入鲜花名称"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲜花种类"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_ad_kind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入鲜花种类"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲜花价格"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_ad_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入鲜花价格"
+                android:inputType="number"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲜花产地"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_ad_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入鲜花产地"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_ad_flowers_info"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_square"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_ad_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_bt_blue"
+            android:stateListAnimator="@drawable/anim_state"
+            android:text="添加"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_ad_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_bt_green"
+            android:stateListAnimator="@drawable/anim_state"
+            android:text="更新"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_ad_retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_bt_red"
+            android:stateListAnimator="@drawable/anim_state"
+            android:text="查询"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_ad_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_bt_gray"
+            android:stateListAnimator="@drawable/anim_state"
+            android:text="删除"
+            android:textColor="#FF999999"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_ad_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_bt_gray"
+            android:stateListAnimator="@drawable/anim_state"
+            android:text="清除"
+            android:textColor="#FF999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_ad_flowers"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_ad_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_ad_flowers"
+        android:layout_marginStart="10dp"
+        android:text="名称："
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_ad_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_ad_name"
+        android:layout_marginStart="10dp"
+        android:text="种类："
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/tv_ad_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_ad_flowers"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/tv_ad_name"
+        android:text="价格："
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_ad_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ad_price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/iv_ad_flowers"
+        android:text="产地："
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+</RelativeLayout>

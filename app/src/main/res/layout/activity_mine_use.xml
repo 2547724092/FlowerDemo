@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activity.MineUseActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_use_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0B76FF">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/ic_left" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="使用说明"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_use_title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_flowers"
+                android:layout_width="306dp"
+                android:layout_height="192dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ic_flowers" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_flowers"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="20dp"
+                android:text="1、用户注册专属账号，可上传用户名、密码和头像；\n2、店铺介绍：查看店铺照片及视频资料；\n3、全部鲜花：可查看店铺内所有鲜花，点击可购买鲜花或对鲜花进行评价；\n4、我：修改资料、关于软件、联系我们、使用说明、更新版本、退出登录。"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

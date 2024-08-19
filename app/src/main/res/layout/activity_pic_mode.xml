@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PicModeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_square_gray">
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="查看大图"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/under_line_white1mm"/>
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="拍摄照片"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/under_line_white1mm"/>
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="从相册选择"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/under_line_white1mm"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FAFAFA"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="取消"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="#FFFFFFFF"/>
+
+    </LinearLayout>
+</RelativeLayout>
